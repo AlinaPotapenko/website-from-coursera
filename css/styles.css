@@ -91,6 +91,7 @@ header {
 #phone div {
 	color: #557c3e;
 	text-align: right;
+	font-weight: bolder;
 }
 .navbar-light .navbar-toggler { /*border color in collapsible menu*/
 	border: 3px solid;
@@ -100,6 +101,9 @@ header {
 .fa.fa-navicon { /*icon's color in collapsible menu*/
   color: #61122f;
   font-size: 29px;
+}
+a.nav-link {
+	height: 70px;
 }
 
 /********** Super extra small devices only **********/
@@ -227,6 +231,27 @@ hr {
   margin-left: auto;
 }
 
+/********** Small devices only **********/
+/* PHONE CALL BUTTON */
+@media (max-width: 767px) {
+#call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+    margin-top: 15px;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+ }
+} /* END OF THE PHONE CALL BUTTON */
+
 /* MENU CATEGORIES PAGE */
 .category-tile { 
   position: relative;
@@ -252,11 +277,15 @@ hr {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 #menu-categories-title + div {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 /* END OF MENU CATEGORIES PAGE */
 
 /* SINGLE CATEGORY PAGE */
+.container h2 {
+	margin-top: 15px;
+}
+
 .menu-item-tile {
 	margin-bottom: 25px;
 }
